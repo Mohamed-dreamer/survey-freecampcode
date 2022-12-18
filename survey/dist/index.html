@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>Fill this survey</p>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="first-name">Enter fullname: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="referrer"> Your Gender
+            <select id="referrer" name="referrer">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+             
+            </select>
+          </label>
+          <label for="age">Input your age : <input id="age" type="number" name="age" min="10" max="100" /></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="1">facebook</option>
+            <option value="2">websites</option>
+            <option value="3">friends</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">What do you like about coding ?:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like to code"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
